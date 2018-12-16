@@ -14,19 +14,19 @@
     <div class="nav_child"> Log -in </div>
   </div><hr>
 
-<h3>This is the root page. </h3><hr>
-
-
-<p> link to Sign_in </p>
-  <%# <%=link_to " => Sign Out", session_path("Log-out"),method: :delete %>  
-
-<p> link to Log-In </p>
-  <%# <%=link_to " => Sign Out", session_path("Log-out"),method: :delete %>  
-
-
 <%# nav_bar %>
 
-<p id=”notice”><%= notice %></p>
+<h3>Landing Page </h3><hr>
+
+
+   <%=link_to " => Sign-Up ", user_new_path %>  
+
+<br>
+<hr>
+ <%=link_to " => Log-In ", user_show_path %>  
+
+ <hr>
+
 
 
 </body>
