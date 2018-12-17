@@ -11,25 +11,120 @@ body {
   border-radius: 5px;
   display: flex;
   background-color: beige;
+  padding: 22px;
+  justify-content: space-around;
+  transition: 3s;
+}
+
+.nav_parent:hover {
+  border: solid black;
+  border-width: 2px;
+  display: flex;
+  background-image: url("https://thumbs.gfycat.com/IckyArcticAnemoneshrimp-max-1mb.gif");
   padding: 2px;
   justify-content: space-around;
+  transition: 3s;
+
 }
 
 .nav_child {
-  border: solid green;
+  border: solid #194973;
   border-width: 2px;
-  border-radius: 5px;
+  border-radius: 15px;
+  ;
   padding: 6px;
   margin: 5px;
+  height: 30px;
+  width: 450px;
+  font-size: 25px;
+  justify-content: center;
+  text-align: center;
 
+  @keyframes twerk_sum {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+
+    30% {
+      transform: scale(1.2);
+      opacity: 1;
+      margin-left: 20%;
+    }
+
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+      margin-left: 60%;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 .nav_child:hover {
-  border: solid green;
+  border: solid #194973;
   border-width: 2px;
-  border-radius: 5px;
-  padding: 6px;
-  margin: 2px;
-  transition: .1s;
+  border-radius: 15px;
+  ;
+  padding: 12px;
+  margin: 5px;
+  height: 100px;
+  width: 150px;
+  font-size: 35px;
+  text-align: center;
+  background-color: #194973;
+  transition: 2s;
+}
 
+.nav_image {
+  width: 37em;
+  height: 15em;
+  border: solid beige;
+  margin: 10px;
+  background-color: beige;
+  border-radius: 20px;
+
+}
+
+.home_mainText_parent {
+  border: double beige;
+  border-width: 6px;
+  width: 116sem;
+  padding: 1em;
+  display: flex;
+  font-size: 20px;
+  background-color: #194973;
+  color: beige;
+}
+
+.hr_space_maker {
+  margin: 60px;
+}
+
+.welcome_txt {
+  margin-left: 20%;
+}
+
+.p_text_home {
+  border: solid beige;
+  padding: 15px;
+  border-width: 1.5px;
+  border-radius: 2px;
+  animation: twerk_sum 22s ease-in .2s;
+  margin: 10px;
+
+}
+
+.space_creating_div {
+  border: double beige;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 2em;
+  text-align: center;
+  margin-bottom: 10%;
+
+  // position: absolute;
 }

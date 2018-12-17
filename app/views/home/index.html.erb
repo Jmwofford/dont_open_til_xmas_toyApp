@@ -7,24 +7,76 @@
   <title>x-mas_toy_app</title>
 </head>
 <body>
-  <div class="nav_parent">  
-    <div class="nav_child"> Home </div>
-    <div class="nav_child"> nav_child </div>
-    <div class="nav_child"> user_profile </div>
-    <div class="nav_child"> Log -in </div>
-  </div><hr>
 
 <%# nav_bar %>
+  <div class="nav_parent">  
+      <div class="nav_child"> Home </div>
+      <div class="nav_child"> nav_child </div>
+      <div class="nav_child"> user_profile </div>
+      <div class="nav_child"> Log -in </div>
+  </div>
+  <hr>
+<%# nav_bar %>
 
-<h3>Landing Page </h3><hr>
 
 
-   <%=link_to " => Sign-Up ", user_new_path %>  
+
+<%unless @current_user %>
+  <div class="home_mainText_parent"> 
+    <div>
+      <img class="nav_image" src="https://i.gifer.com/XfQ8.gif">
+      <h1 class="welcome_txt">Welcome New_User !! </h1>
+    </div>
+
+    <div class="space_creating_div">
+      <h1>N2roSpekt </h1>
+    </div>
+
+    <div>
+      <p class="p_text_home">Loremloremlorem<br>
+        <h3>LoremLorem</h3></p>
+      <p class="p_text_home">Loremloremlorem<br>
+        <h3>LoremLorem</h3></p>
+      <p class="p_text_home">Loremloremlorem<br>
+        <h3>LoremLorem</h3></p><br>
+    </div>
+
+    <hr class="hr_space_maker">
+
+    
+
+      <h3>Register New User Profile Below  </h3>
+      
+      
+      
+      
+      
+      <hr>
+      
+  </div>
+  <%=button_to " Sign-Up [Create New User Account] ", new_session_path %>  
+<%end%>
+</div>
+<%# create general landing/splash page, but once currentuser is logged in.. reformat, to solely cater to @current_user %>
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <hr>
- <%=link_to " => Log-In ", user_show_path %>  
+<%if @current_user %>
 
+<img class="cu_welcome_gif" src="http://www.animatedimages.org/data/media/707/animated-welcome-image-0112.gif">
+<h3> @current_user.email</h3>
+ <%=button_to " => Log-In ", new_user_path %>  
+<%end%>
  <hr>
 
 

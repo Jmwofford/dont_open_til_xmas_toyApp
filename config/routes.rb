@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  root 'home#index'
-    get 'user/new'
-    get 'user/edit'
-    get 'user/show'
-
-  resources :user, only:[:new, :create, :destroy]
-
-
-
+root 'home#index'
+resources :user, only:[:create, :new]
+resources :sessions, only:[:new, :create, :destroy]
 
 end

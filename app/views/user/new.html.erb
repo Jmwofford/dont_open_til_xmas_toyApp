@@ -1,25 +1,24 @@
-<div class="main_login">
-    <h1 class="main_login2"> Ready to Begin? Fill Out Form Below To Continue</h1>
-    
-    <h4> New User Registration :  </h4>
+users_new
+<h1>Login Page</h1>
+<%# <img class="ninja_float"src="https://www.creditrepairninja.net/wp-content/uploads/2017/05/credit-ninja3.gif"> %>
+  
+<h4> Enter Login Credentials to Visit User Show Page : </h4>
 
-    <form action="/user" method="POST">
-      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-      <input type="name" name="user[name]" placeholder="Enter Name"><br>
-      <input type="email" name="user[email]" placeholder="Enter Valid Email"><br>
-      <input type="password" name="user[password]" placeholder="Create Password"><br>
-      <input type="password" name="user[password_confirmation]" placeholder="Confirm Password"><br>
-      <input type="submit" name="Create MyNinja" class="submit">
-    </form>
+<form action = "/user" method= "POST"> 
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+     <input type="name" name="user[name]" placeholder="Enter Name">
+
+    <input type="email" name="login[email]" placeholder=" Enter Email ">
+    <input type="password" name="login[password]" placeholder=" Enter Password"> 
+    <input type="submit" name="submit" class="submit">
+</form>
 
   <div class = "errors">
-      <%if flash[:register_errors]%> 
-      <%flash[:register_errors].each do |error|%>
-      <p><%error%></h6>
+      <%if flash[:login_errors]%> 
+      <%flash[:login_errors].each do |error|%>
+      <p class="error_handle"><%error%></a>
         <%end%>
       <%end%>
-</div>
 
-
-</body>
-</html>
+  </div>
+</div> 
