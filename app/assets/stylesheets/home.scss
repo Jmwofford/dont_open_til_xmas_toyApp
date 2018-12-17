@@ -116,6 +116,7 @@ body {
 
 .another_home_sub_div {
   margin-right: 40%;
+  padding: 15px;
 }
 
 .welcome_txt {
@@ -126,11 +127,12 @@ body {
 
 .p_text_home {
   border: solid beige;
-  padding: 15px;
+  // padding: 15px;
   border-width: 1.5px;
   border-radius: 2px;
-  animation: twerk_sum 12s ease-in .2s;
+  animation: twerk_sum 32s ease 0s infinite;
   margin: 5px;
+  font-size: 35px;
 
 }
 
