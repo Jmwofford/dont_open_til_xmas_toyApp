@@ -23,37 +23,33 @@
 
 <%unless @current_user %>
   <div class="home_mainText_parent"> 
-    <div>
-      <img class="nav_image" src="https://i.gifer.com/XfQ8.gif">
-      <h1 class="welcome_txt">Welcome New_User !! </h1>
+    
+    <div class="home_subContainer">
+        <img class="nav_image" src="https://d33wjekvz3zs1a.cloudfront.net/wp-content/uploads/2016/02/Global-Political-Economy.gif">
+        <h1 class="welcome_txt">Welcome New_User !! </h1>
+      
     </div>
 
-    <div class="space_creating_div">
+    <%# <div class="space_creating_div">
+       <img src="https://d33wjekvz3zs1a.cloudfront.net/wp-content/uploads/2016/02/Global-Political-Economy.gif">
+      <hr >
       <h1>N2roSpekt </h1>
+    </div> %>
+<div class="hr_space_maker"></div>
+    <div class="another_home_sub_div">
+    
+      <%# <p class="p_text_home">hello world<br>
+        <h2>LoremLorem</h2></p>
+      <p class="p_text_home">hola mundo<br>
+        <h2>LoremLorem</h2></p> %>
+      <p class="p_text_home">hello world<br>
+        <h2 id="lorem_tilt">LoremLorem</h2></p><br>
     </div>
-
-    <div>
-      <p class="p_text_home">Loremloremlorem<br>
-        <h3>LoremLorem</h3></p>
-      <p class="p_text_home">Loremloremlorem<br>
-        <h3>LoremLorem</h3></p>
-      <p class="p_text_home">Loremloremlorem<br>
-        <h3>LoremLorem</h3></p><br>
-    </div>
-
-    <hr class="hr_space_maker">
 
     
-
-      <h3>Register New User Profile Below  </h3>
-      
-      
-      
-      
-      
-      <hr>
-      
   </div>
+
+   <h3>Register New User Profile Below  </h3>
   <%=button_to " Sign-Up [Create New User Account] ", new_session_path %>  
 <%end%>
 </div>
