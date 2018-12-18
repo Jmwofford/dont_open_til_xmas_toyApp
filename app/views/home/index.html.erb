@@ -19,11 +19,10 @@
     <%unless @current_user %>
                                                                   <%# ============= Guest Splash Page  %>
     <div class="home_mainText_parent">
-
         <div class="home_subContainer">
             <img class="nav_image" src="https://cdn.dribbble.com/users/1655585/screenshots/3433111/glb_000_globe_loop2__3.gif">
             <div>
-              <h1 class="welcome_txt">  - N 2 r o S p e k t - </h1>
+              <%# <h1 class="welcome_txt">  - N 2 r o S p e k t - </h1> %>
             </div>
         </div>
     </div> 
@@ -34,11 +33,11 @@
   <%# ====================== %>
 <h3 class="reg_title" ></h3>
 <hr><br>
-            <p class="p_text_home">Registration is Now Faster and Easier than Ever!</p>
-<div class="button_class"><%=button_to " Sign-Up [Create New User Account] ", new_session_path %> </div>
+<p class="p_text_home">Registration is Now Faster and Easier than Ever!</p><br>
+<%=button_to " Sign-Up [Create New User Account] ", new_session_path %> 
 <%end%>
 </div>
-<%# create general landing/splash page, but once currentuser is logged in.. reformat, to solely cater to @current_user %>20
+<%# create general landing/splash page, but once currentuser is logged in.. reformat, to solely cater to @current_user %>
 
 
 

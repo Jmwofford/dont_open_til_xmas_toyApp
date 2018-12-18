@@ -9,7 +9,7 @@ body {
 
 
 .nav_parent {
-  border: solid beige;
+  // border: solid beige;
   border-width: 1px;
   border-radius: 5px;
   display: flex;
@@ -95,12 +95,12 @@ body {
 }
 
 .nav_image {
-  width: 480px;
+  width: 32em;
   height: 280px;
   border: solid beige;
   border-width: 1px;
-  margin-left: 340px;
-  padding: 5px;
+  margin-left: 30%;
+  padding: 8px;
   border-radius: 50px;
 
 }
@@ -144,20 +144,23 @@ body {
 .p_text_home {
   position: absolute;
   animation: twerk_sum 5s ease-in-out 0s;
-  font-size: 32px;
+  font-size: 39px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   color: beige;
-  margin-left: 40px;
+  margin-left: 20%;
+
 }
 
 .home_subContainer {
   margin: 25px;
   border: solid beige;
+  border-radius: 12px;
   padding: 35px;
   width: 90%;
   background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
   height: 320px;
+  background-size: cover;
 
 }
 
