@@ -1,38 +1,39 @@
-// homepage(root_path)
 body {
-  background-color: lightgray;
+  background-color: black;
   font-family: serif;
+  padding: 30px;
 
 }
 
+// =======================
+
+
 .nav_parent {
-  border: double #044B70;
-  border-width: 11px;
+  border: solid beige;
+  border-width: 1px;
   border-radius: 5px;
   display: flex;
-  background-color: beige;
-  padding: 22px;
+  background-color: black;
+  padding: 12px;
   justify-content: space-around;
-  transition: 3s;
+  margin: 22px;
 }
 
 .nav_parent:hover {
-  background-image: url("https://thumbs.gfycat.com/IckyArcticAnemoneshrimp-max-1mb.gif");
+  background-image: url("https://thumbs.gfycat.com/PoliticalEarnestChevrotain-size_restricted.gif");
 
-  border: double #044B70;
+  border: double beige;
   border-width: 6px;
   border-radius: 5px;
-  display: flex;
-  background-color: beige;
   padding: 22px;
   justify-content: space-around;
-  transition: 3s;
+  transition: 12s;
 
 }
 
 .nav_child {
-  border: solid #194973;
-  border-width: 2px;
+  border: solid beige;
+  border-width: .5px;
   border-radius: 15px;
   ;
   padding: 6px;
@@ -42,27 +43,38 @@ body {
   font-size: 25px;
   justify-content: center;
   text-align: center;
+  color: beige;
 
   @keyframes twerk_sum {
     0% {
-      transform: scale(0.1);
+      transform: scale(1);
       opacity: 0;
     }
 
-    30% {
-      transform: scale(1.2);
+    20% {
+      transform: scale(0.8);
       opacity: 1;
-      margin-left: 20%;
+      margin-left: 15%;
+
     }
 
-    60% {
-      transform: scale(1.2);
+    50% {
+      transform: scale(0.4);
       opacity: 1;
-      margin-left: 60%;
+      margin-left: 25%;
+      height: auto;
+    }
+
+    80% {
+      transform: scale(0.8);
+      opacity: 1;
+      margin-bottom: 10%;
     }
 
     100% {
       transform: scale(1);
+      opacity: 1;
+      margin-bottom: 15%;
     }
   }
 }
@@ -83,65 +95,100 @@ body {
 }
 
 .nav_image {
-  width: 18em;
-  height: 15em;
-  border: double #194973;
-  border-width: 14px;
-  margin: 10px;
-  background-color: beige;
+  width: 480px;
+  height: 280px;
+  border: solid beige;
+  border-width: 1px;
+  margin-left: 340px;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 50px;
 
 }
 
 .home_mainText_parent {
-  border: double beige;
-  border-width: 6px;
-  width: 116em;
+  border: solid beige;
+  border-width: 1px;
+  width: auto;
   padding-left: 2em;
   display: flex;
   font-size: 20px;
-  background-color: #194973;
+  background-color: black;
   color: beige;
   padding-top: 12px;
 
 }
 
-.hr_space_maker {
-  // unsure
-  border: dashed beige;
-  animation: twerk_sum 12s ease-in 0s infinite;
-
-}
-
 .another_home_sub_div {
-  margin-right: 40%;
-  padding: 15px;
+  margin-left: 105px;
+  margin-top: 25px;
+  width: 65%;
+  padding: 55px;
+  border: solid beige;
+  border-width: 2px;
+  height: 385px;
+  font-size: 45px;
 }
 
 .welcome_txt {
-  // margin-left: 10%;
-  border: double beige;
-  border-width: 11px;
+  border: solid beige;
+  border-width: 1px;
+  text-align: center;
+  margin-left: 335px;
+  border-radius: 6px;
+  font-size: 22px;
+  background-color: black;
+  color: beige;
+  width: 520px;
 }
 
 .p_text_home {
+  position: absolute;
+  animation: twerk_sum 5s ease-in-out 0s;
+  font-size: 32px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: beige;
+  margin-left: 40px;
+}
+
+.home_subContainer {
+  margin: 25px;
   border: solid beige;
-  // padding: 15px;
-  border-width: 1.5px;
-  border-radius: 2px;
-  animation: twerk_sum 32s ease 0s infinite;
-  margin: 5px;
-  font-size: 35px;
+  padding: 35px;
+  width: 90%;
+  background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+  height: 320px;
 
 }
 
-.space_creating_div {
-  border: double beige;
+.reg_title {
   padding: 10px;
-  margin: 20px;
-  margin-left: 2em;
-  text-align: center;
-  margin-bottom: 10%;
-  font-size: 15px;
+  margin: 15px;
+  font-size: 32px;
+}
+
+.space_maker_home {
+  margin: 25px;
+}
+
+.button_class {
+  margin-left: 65%;
+  border: solid beige;
+  width: 205px;
+  padding: 25px;
+  border-radius: 15px;
+  background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+  position: absolute;
+}
+
+.button_class:hover {
+  margin-left: 70%;
+  border: solid beige;
+  width: 205px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: lightgreen;
+  position: absolute;
+  transition: 3s;
+
 }

@@ -7,49 +7,38 @@
   <title>x-mas_toy_app</title>
 </head>
 <body>
-
-<%# nav_bar %>
+                                                    <%# nav_bar ============================================ %>
   <div class="nav_parent">  
-      <div class="nav_child"> Home </div>
-      <div class="nav_child"> nav_child </div>
-      <div class="nav_child"> user_profile </div>
-      <div class="nav_child"> Log -in </div>
-  </div>
-  <hr>
-<%# nav_bar %>
-
-
-
-
-<%unless @current_user %>
-  <div class="home_mainText_parent"> 
-    
-    <div class="home_subContainer">
-        <img class="nav_image" src="https://d33wjekvz3zs1a.cloudfront.net/wp-content/uploads/2016/02/Global-Political-Economy.gif">
-        <h1 class="welcome_txt">Welcome New_User !! </h1>
-      
-    </div>
-
-    <%# <div class="space_creating_div">
-       <img src="https://d33wjekvz3zs1a.cloudfront.net/wp-content/uploads/2016/02/Global-Political-Economy.gif">
-      <hr >
-      <h1>N2roSpekt </h1>
-    </div> %>
-<div class="hr_space_maker"></div>
-    <div class="another_home_sub_div">
-      <h2 id="lorem_tilt">N2roSpekt </h2></p><br>
-      <p class="p_text_home">This will display a slogan, of somesort. You will be inspired & thoroughly impressed.</p> <br>
-        
-    </div>
-
-    
+      <div class="nav_child"> Add Text Here </div>
+      <div class="nav_child"> Add Text Here </div>
+      <div class="nav_child"> Add Text Here</div>
+      <div class="nav_child"> Add Text Here</div>
   </div>
 
-   <h3 class="" >Register New User Profile Below  </h3>
-  <%=button_to " Sign-Up [Create New User Account] ", new_session_path %>  
+
+    <%unless @current_user %>
+                                                                  <%# ============= Guest Splash Page  %>
+    <div class="home_mainText_parent">
+
+        <div class="home_subContainer">
+            <img class="nav_image" src="https://cdn.dribbble.com/users/1655585/screenshots/3433111/glb_000_globe_loop2__3.gif">
+            <div>
+              <h1 class="welcome_txt">  - N 2 r o S p e k t - </h1>
+            </div>
+        </div>
+    </div> 
+  </div>
+</div>
+
+
+  <%# ====================== %>
+<h3 class="reg_title" ></h3>
+<hr><br>
+            <p class="p_text_home">Registration is Now Faster and Easier than Ever!</p>
+<div class="button_class"><%=button_to " Sign-Up [Create New User Account] ", new_session_path %> </div>
 <%end%>
 </div>
-<%# create general landing/splash page, but once currentuser is logged in.. reformat, to solely cater to @current_user %>
+<%# create general landing/splash page, but once currentuser is logged in.. reformat, to solely cater to @current_user %>20
 
 
 
@@ -62,14 +51,15 @@
 
 
 <br>
-<hr>
-<%if @current_user %>
 
-<img class="cu_welcome_gif" src="http://www.animatedimages.org/data/media/707/animated-welcome-image-0112.gif">
-<h3> @current_user.email</h3>
- <%=button_to " => Log-In ", new_user_path %>  
+<%if @current_user %>
+  <img class="cu_welcome_gif" src="http://www.animatedimages.org/data/media/707/animated-welcome-image-0112.gif">
+  <h3> @current_user.email</h3>
+    <div>
+      <%=button_to " => Log-In ", new_user_path %>  
+    <div>
 <%end%>
- <hr>
+
 
 
 
